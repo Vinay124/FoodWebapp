@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Welcome from "./Components/Auth/Login/Welcome";
+import LoginUser from "./Components/Auth/Login/LoginUser.jsx";
+import Signup from "./Components/Auth/Login/Signup"
+import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import Verification from './Components/Auth/Login/Verification'
+import Registration from './Components/Auth/Login/Registration'
+import RessetPassword from './Components/Auth/Login/RessetPassword'
+// home compo
+import Home from "./Pages/HomeScreen/Home";
+import Profile from "./Pages/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Welcome/>} exact/>
+          <Route path="/LoginUser" element={<LoginUser/>} exact/>
+          <Route path="/Signup" element={<Signup/>} exact/>
+          <Route path="/Verification" element={<Verification/>} exact/>
+          <Route path="/Registration" element={<Registration/>} exact/>
+          <Route path="/RessetPassword" element={<RessetPassword/>} exact/>
+          {/* home Router */}
+          <Route path="/Home" element={<Home/>} exact/>
+          <Route path="/Profile" element={<Profile/>} exact/>
+        </Routes>
+      </Router>
+    </>
   );
 }
 

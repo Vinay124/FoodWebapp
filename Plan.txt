@@ -1,0 +1,8 @@
+[*] Reusable component
+[*] React Funcationlity
+[*] Authorizatioon
+[*] Redirection
+
+
+
+[*] Backend ExpressJS
