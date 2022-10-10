@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { HiChevronDown } from "react-icons/hi";
 import UserIcon from "../../assets/images/user.png";
-import { IoIosArrowForward } from "react-icons/io";
-import { BsPatchCheckFill } from "react-icons/bs";
-import { RiRidingLine } from "react-icons/ri";
-import { RiTimerFlashLine } from "react-icons/ri";
-import {GiRoundStar} from 'react-icons/gi'
-import {AiTwotoneHeart} from 'react-icons/ai'
 // images
 import Burger from "../../assets/images/burger.png";
 import Asian from "../../assets/images/asian.png";
@@ -16,9 +10,6 @@ import donet from "../../assets/images/donet.png";
 import Mexican from "../../assets/images/mexican.png";
 import Pizza from "../../assets/images/pizza.png";
 // dish cardimage
-import Mcburger from "../../assets/images/food.png";
-import Paneer from "../../assets/images/paneer.png";
-import Pizzza from "../../assets/images/pizzza.png";
 import Cards from "../../Components/Cards";
 import Popularitems from "../../Components/Popularitems";
 
@@ -37,11 +28,13 @@ const Home = () => {
           </span>
         </div>
         <div>
+          <Link to="/Profile">
           <img
             src={UserIcon}
             alt=""
             className="w-14 border border-red-500 rounded-full"
           />
+          </Link>
         </div>
       </div>
 
@@ -134,12 +127,7 @@ const Home = () => {
       <Cards/>
 
       {/* popular items */}
-      <div>
-        <h1 className="text-xl font-nunito mx-2 mt-5 font-semibold">Popular Items</h1>
-        <div>
-        <Popularitems/>
-        </div>
-      </div>
+      <Popularitems/>
     </div>
   );
 };

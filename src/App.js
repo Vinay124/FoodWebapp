@@ -6,9 +6,11 @@ import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import Verification from './Components/Auth/Login/Verification'
 import Registration from './Components/Auth/Login/Registration'
 import RessetPassword from './Components/Auth/Login/RessetPassword'
+import Rating from './Pages/Rating'
 // home compo
 import Home from "./Pages/HomeScreen/Home";
 import Profile from "./Pages/Profile";
+import AddAddress from "./Pages/AddAddress"
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           {/* home Router */}
           <Route path="/Home" element={<Home/>} exact/>
           <Route path="/Profile" element={<Profile/>} exact/>
+          <Route path="/AddAddress" element={<AddAddress/>} exact/>
+          <Route path="/Rating" element={<Rating/>} exact/>
         </Routes>
       </Router>
     </>
