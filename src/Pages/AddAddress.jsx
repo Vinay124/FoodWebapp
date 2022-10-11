@@ -1,12 +1,20 @@
 import React from "react";
 import { FiChevronLeft } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AddAddress = () => {
+
+  let navigate = useNavigate();
+  function toProfile(e) {
+    e.preventDefault();
+    let path = "/Profile";
+    navigate(path);
+  }
+
   return (
     <div className="max-w-lg">
       <div className="relative">
-        <button
+        <button onClick={toProfile}
           className="absolute outline:none border-none cursor-pointer hover:bg-slate-300 top-6 bg-white w-10 h-15 p-1.5 hover:text-black 
         shadow-md flex rounded-md text-center ml-6"
         >
@@ -37,21 +45,6 @@ const AddAddress = () => {
               className="flex mt-2 p-5 w-full rounded-2xl border text-xl border-gray-200 focus:border-orange-500 outline-orange-500"
             />
           </div>
-          {/* <div class="flex justify-center">
-            <div class="w-full m-6">
-            <label className="text-xl font-nunito">State</label>
-              <select
-                className="form-select 
-                flex  p-5 w-full rounded-2xl border text-xl border-gray-200 focus:border-orange-500 outline-orange-500"
-                aria-label="Default select example"
-              >
-                <option selected className="">Slect State</option>
-                <option value="1">Bangalore</option>
-                <option value="2">Chennai</option>
-                <option value="3">Hyderabad</option>
-              </select>
-            </div>
-          </div> */}
           <div class="flex justify-center">
             <div class="w-full m-5">
             <label className="text-xl font-nunito">City</label>

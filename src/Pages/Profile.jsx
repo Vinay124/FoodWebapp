@@ -2,13 +2,21 @@ import React from "react";
 import profilesvg from "../assets/images/profilesvg.png";
 import { FiChevronLeft } from "react-icons/fi";
 import UserIcon from "../assets/images/user.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Profile = () => {
+
+  let navigate = useNavigate();
+  function backTMainpage(e) {
+    e.preventDefault();
+    let path = "/home"
+    navigate(path)
+  }
+
   return (
     <div className="max-w-lg h-screen">
       <div className="relative">
-        <button
+        <button onClick={backTMainpage}
           className=" outline:none border-none cursor-pointer hover:bg-slate-300 absolute top-14 bg-white w-10 h-15 p-1.5 hover:text-black 
         shadow-md flex rounded-md text-center ml-6"
         >

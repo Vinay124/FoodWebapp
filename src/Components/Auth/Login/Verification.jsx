@@ -5,7 +5,7 @@ import { FiChevronLeft } from "react-icons/fi";
 
 const Verification = () => {
   return (
-    <div>
+    <div className="max-w-lg">
       <Card>
         <div className="relative">
           <Link>

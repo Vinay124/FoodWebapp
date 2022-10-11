@@ -1,10 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Login/styles/auth.moudle.css";
 import { FcGoogle } from "react-icons/fc";
 import { FcAbout } from "react-icons/fc";
 
 const Welcome = () => {
+  // goto signin
+  
+  let navigate = useNavigate();
+  function toSignin(e) {
+    e.preventDefault();
+    let path ="/LoginUser";
+    navigate(path)
+  }
+
   return (
     <div className="max-w-lg h-screen bg-images">
       <div className="skip-btn relative">
@@ -43,7 +52,7 @@ const Welcome = () => {
             </div>
             <div>
             <Link to="/Signup">
-            <button className="py-6 px-7 absolute bottom-16 m-6 right-0 left-0 
+            <button className=" max-w-lg py-6 px-7 absolute bottom-16 m-6 right-0 left-0 
                  bg-gray-700 opacity-70 hover:text-white text-white  
                  font-samibold rounded-lg shadow-md hover:bg-orange-500 
                  focus:outline-none focus:ring-2 focus:ring-blue-300 text-xl
@@ -52,7 +61,7 @@ const Welcome = () => {
             </div>
             <div>
                 <h1 className="text-center text-xl text-zinc-200 absolute bottom-10 right-0 left-0 h-100  ">Already have an account? 
-                    <Link to="/" className="ml-2 text-orange-400 underline">Sign In</Link>
+                    <button to="/" onClick={toSignin} className="ml-2 text-orange-400 underline">Sign In</button>
                 </h1>
             </div>
         </div>

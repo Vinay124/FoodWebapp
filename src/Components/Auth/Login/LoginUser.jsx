@@ -1,22 +1,30 @@
 import React from "react";
 import Card from "./Card";
 import { FiChevronLeft } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 
 const LoginUser = () => {
+
+  let navigate = useNavigate();
+  function backToWelcome(e) {
+    e.preventDefault();
+    let path = "/"
+    navigate(path)
+  }
+
   return (
-    <div>
+    <div className="max-w-lg">
       <Card>
         <div className="relative">
           <Link>
-            <div className=" absolute bottom-2 bg-white w-10 h-15 p-1.5 shadow-md flex rounded-md text-center ml-6">
+            <button onClick={backToWelcome} className=" outline-none border-none absolute bottom-2 bg-white w-10 h-15 p-1.5 shadow-md flex rounded-md text-center ml-6">
               <FiChevronLeft
                 color="black"
                 className="hover:text-orange-500"
                 fontSize="2em"
               />
-            </div>
+            </button>
           </Link>
         </div>
         <div>
@@ -56,7 +64,7 @@ const LoginUser = () => {
             <div className="flex mt-6">
               <h1 className="text-center text-xl text-semibold text-black-200 font-nunito m-auto">
                 Don’t have an account?
-                <Link className="ml-3 text-orange-600 underline">Sign Up</Link>
+                <Link to="/Signup" className="ml-3 text-orange-600 underline">Sign Up</Link>
               </h1>
             </div>
             <div className="mt-7">
