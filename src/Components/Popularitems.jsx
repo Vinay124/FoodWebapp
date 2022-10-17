@@ -6,7 +6,7 @@ import pizza2 from "../assets/images/pizza2.png";
 
 const Popularitems = () => {
   return (
-    <div>
+    <div className="pb-20">
       <div>
         <h1 className="text-xl font-nunito mx-2 mt-5 font-semibold">Popular Items</h1>
         <div className="grid gap-x-8 gap-y-2 grid-cols-2 mt-4">
@@ -16,14 +16,14 @@ const Popularitems = () => {
             ₹ 500.00
           </h1>
           <div>
-            <div className="bg-orange-500 absolute top-2 right-0 left-36 flex items-center justify-center w-8 h-8 rounded-full">
+            <div className="bg-orange-500 absolute top-2 right-0 left-32 flex items-center justify-center w-8 h-8 rounded-full">
               <AiTwotoneHeart
                 className="text-white hover:text-red-500"
                 fontSize="1.3em"
               />
             </div>
             <div>
-              <h1 className="flex absolute top-44 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
+              <h1 className="flex absolute top-32 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
                 4.5
                 <GiRoundStar
                   className="my-2 mx-2 text-orange-300"
@@ -48,14 +48,14 @@ const Popularitems = () => {
             ₹ 500.00
           </h1>
           <div>
-            <div className="bg-orange-500 absolute top-4 right-0 left-36 flex items-center justify-center w-8 h-8 rounded-full">
+            <div className="bg-orange-500 absolute top-4 right-0 left-32 flex items-center justify-center w-8 h-8 rounded-full">
               <AiTwotoneHeart
                 className="text-white hover:text-red-500"
                 fontSize="1.3em"
               />
             </div>
             <div>
-              <h1 className="flex absolute top-44 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
+              <h1 className="flex absolute top-32 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
                 4.5
                 <GiRoundStar
                   className="my-2 mx-2 text-orange-300"
@@ -80,14 +80,14 @@ const Popularitems = () => {
             ₹ 500.00
           </h1>
           <div>
-            <div className="bg-orange-500 absolute top-4 right-0 left-36 flex items-center justify-center w-8 h-8 rounded-full">
+            <div className="bg-orange-500 absolute top-4 right-0 left-32 flex items-center justify-center w-8 h-8 rounded-full">
               <AiTwotoneHeart
                 className="text-white hover:text-red-500"
                 fontSize="1.3em"
               />
             </div>
             <div>
-              <h1 className="flex absolute top-44 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
+              <h1 className="flex absolute top-32 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
                 4.5
                 <GiRoundStar
                   className="my-2 mx-2 text-orange-300"
@@ -112,14 +112,14 @@ const Popularitems = () => {
             ₹ 500.00
           </h1>
           <div>
-            <div className="bg-orange-500 absolute top-4 right-0 left-36 flex items-center justify-center w-8 h-8 rounded-full">
+            <div className="bg-orange-500 absolute top-4 right-0 left-32 flex items-center justify-center w-8 h-8 rounded-full">
               <AiTwotoneHeart
                 className="text-white hover:text-red-500"
                 fontSize="1.3em"
               />
             </div>
             <div>
-              <h1 className="flex absolute top-44 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
+              <h1 className="flex absolute top-32 ml-1 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">
                 4.5
                 <GiRoundStar
                   className="my-2 mx-2 text-orange-300"

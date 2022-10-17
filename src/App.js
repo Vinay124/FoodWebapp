@@ -11,6 +11,12 @@ import Rating from './Pages/Rating'
 import Home from "./Pages/HomeScreen/Home";
 import Profile from "./Pages/Profile";
 import AddAddress from "./Pages/AddAddress"
+import Notification from "./Pages/Notification";
+import Cart from "./Pages/Cart";
+import Location from "./Pages/Location";
+import Wishlist from './Pages/Wishlist'
+import FoodDetails from "./Pages/FoodDetails";
+// import Header from "./Components/Header/Header";
 
 function App() {
   return (
@@ -28,6 +34,11 @@ function App() {
           <Route path="/Profile" element={<Profile/>} exact/>
           <Route path="/AddAddress" element={<AddAddress/>} exact/>
           <Route path="/Rating" element={<Rating/>} exact/>
+          <Route path="/Notification" element={<Notification/>}/>
+          <Route path="/Cart" element={<Cart/>}/>
+          <Route path="/Wishlist" element={<Wishlist/>}/>
+          <Route path="/Location" element={<Location/>}/>
+          <Route path="/FoodDetais" element={<FoodDetails/>}/>
         </Routes>
       </Router>
     </>

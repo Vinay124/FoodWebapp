@@ -1,15 +1,13 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
 
-const Cart = () => {
+const Wishlist = () => {
   return (
     <>
-    <div>
-      CartPage
-    </div>
+    <div>Wishlist</div>
     <Header/>
     </>
   )
 }
 
-export default Cart
+export default Wishlist

@@ -12,9 +12,11 @@ import Pizza from "../../assets/images/pizza.png";
 // dish cardimage
 import Cards from "../../Components/Cards";
 import Popularitems from "../../Components/Popularitems";
+import Header from '../../Components/Header/Header'
 
 const Home = () => {
   return (
+    <>
     <div className="max-w-lg h-screen bg-white m-5 ">
       <div className="flex justify-between items-cente">
         <HiOutlineMenuAlt3 fontSize="2.5em" />
@@ -129,6 +131,8 @@ const Home = () => {
       {/* popular items */}
       <Popularitems/>
     </div>
+    <Header/> 
+    </>
   );
 };
 

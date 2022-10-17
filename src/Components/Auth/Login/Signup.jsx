@@ -15,7 +15,7 @@ const Signup = () => {
   }
 
   return (
-    <div>
+    <div className="max-w-lg">
       <div className="relative">
         <button onClick={toWelcome}
           className="absolute outline:none border-none cursor-pointer hover:bg-slate-300 top-6 bg-white w-10 h-15 p-1.5 hover:text-black 

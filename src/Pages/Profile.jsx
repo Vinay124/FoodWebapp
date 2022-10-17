@@ -3,6 +3,7 @@ import profilesvg from "../assets/images/profilesvg.png";
 import { FiChevronLeft } from "react-icons/fi";
 import UserIcon from "../assets/images/user.png";
 import { Link, useNavigate } from "react-router-dom";
+import Header from "../Components/Header/Header";
 
 const Profile = () => {
 
@@ -14,7 +15,8 @@ const Profile = () => {
   }
 
   return (
-    <div className="max-w-lg h-screen">
+    <>
+    <div className="max-w-lg h-auto">
       <div className="relative">
         <button onClick={backTMainpage}
           className=" outline:none border-none cursor-pointer hover:bg-slate-300 absolute top-14 bg-white w-10 h-15 p-1.5 hover:text-black 
@@ -28,25 +30,25 @@ const Profile = () => {
       </div>
       <img
         src={UserIcon}
-        className="w-24 absolute inset-x-44 inset-y-44 border border-red-600 rounded-full"
+        className="w-24 absolute inset-x-36 inset-y-32 border border-red-600 rounded-full"
         alt=""
       />
-      <h1 className="absolute inset-x-40 inset-y-72 font-nunito text-2xl font-semibold">
+      <h1 className="absolute inset-x-32 inset-y-56 w-full font-nunito text-2xl font-semibold">
         Eljad Eendaz
       </h1>
-      <p className="absolute inset-x-44 inset-y-80 font-nunito text-xl text-orange-400">
+      <p className="absolute inset-x-36 inset-y-64 font-nunito text-xl text-orange-400">
         Edit Profile
       </p>
 
       {/* forms */}
-      <div>
+      <div className="mt-5 max-h-auto">
         <form>
           <div className="m-6">
             <label className="text-xl font-nunito">Full name</label>
             <input
               type="text"
               placeholder="Eljad Eendaz"
-              value=" Eljad Eendaz"
+              value="Eljad Eendaz"
               className="flex mt-2 p-5 w-full rounded-2xl border text-xl focus:border-orange-500 border-gray-200 focus:border-orange-500"
             />
           </div>
@@ -73,13 +75,15 @@ const Profile = () => {
           </Link>
           <button
             type="submit"
-            className="text-2xl font-nunito rounded-3xl bg-transprent border border-orange-500 hover:bg-orange-700 text-orange-400 font-bold py-5 mt-10 flex justify-center m-auto px-20"
+            className="text-1xl font-nunito rounded-3xl bg-transprent border border-orange-500 hover:bg-orange-700 text-orange-400 font-bold py-3 mt-5 flex justify-center m-auto px-10"
           >
             Submit
           </button>
         </form>
       </div>
-    </div>
+    </div> 
+    <Header/> 
+  </>
   );
 };
 

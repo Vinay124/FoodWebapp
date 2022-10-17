@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
 
-const Cart = () => {
+const Location = () => {
   return (
     <>
     <div>
-      CartPage
+        Location Page
     </div>
+
     <Header/>
     </>
   )
 }
 
-export default Cart
+export default Location
