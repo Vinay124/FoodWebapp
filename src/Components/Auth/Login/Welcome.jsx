@@ -10,14 +10,14 @@ const Welcome = () => {
   let navigate = useNavigate();
   function toSignin(e) {
     e.preventDefault();
-    let path ="/LoginUser";
+    let path ="/Signup";
     navigate(path)
   }
 
   return (
     <div className="max-w-lg h-screen bg-images">
       <div className="skip-btn relative">
-        <Link>
+        <Link to="/Home">
           <button className="py-2 px-4 mt-5 absolute left-80 bg-white opacity-30 hover:text-white text-black text-xl font-samibold rounded-lg shadow-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-60">
             Skip
           </button>
@@ -51,7 +51,7 @@ const Welcome = () => {
                  focus:ring-opacity-60 w-40 flex justify-around">  <FcGoogle color="white" fontSize="1.5em"/>Google</button>
             </div>
             <div>
-            <Link to="/Signup">
+            <Link to="/LoginUser">
             <button className=" max-w-lg py-6 px-7 absolute bottom-16 m-6 right-0 left-0 
                  bg-gray-700 opacity-70 hover:text-white text-white  
                  font-samibold rounded-lg shadow-md hover:bg-orange-500 

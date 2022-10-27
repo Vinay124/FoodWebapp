@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { RiRidingLine } from "react-icons/ri";
@@ -13,6 +13,14 @@ import Paneer from "../assets/images/paneer.png";
 import Pizzza from "../assets/images/pizzza.png";
 
 const Cards = () => {
+  
+  let navigate = useNavigate();
+    function toRecipieView(e) {
+      e.preventDefault();
+      let path = '/RecipieDetails'
+      navigate(path);
+    }
+
   return (
     <div>
         <div className="flex justify-between items-center mt-6">
@@ -22,8 +30,8 @@ const Cards = () => {
           </Link>
         </div>
         {/* food card */}
-        <div className="overflow-x-auto flex ">
-        <div className="max-h-full mr-8">
+        <div className="overflow-x-auto flex">
+        <div className="max-h-full mr-8" onClick={toRecipieView}>
           <div className="mt-7 relative">
             <img src={Mcburger} className="w-full" alt="/" />
             <h1 className="flex absolute top-4 ml-3 py-2 px-3 font-nunito text-ml rounded-xl items-center bg-white">4.5 

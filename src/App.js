@@ -15,8 +15,10 @@ import Notification from "./Pages/Notification";
 import Cart from "./Pages/Cart";
 import Location from "./Pages/Location";
 import Wishlist from './Pages/Wishlist'
-import FoodDetails from "./Pages/FoodDetails";
+import RecipieDetails from "./Pages/RecipieDetails";
+
 // import Header from "./Components/Header/Header";
+
 
 function App() {
   return (
@@ -38,7 +40,9 @@ function App() {
           <Route path="/Cart" element={<Cart/>}/>
           <Route path="/Wishlist" element={<Wishlist/>}/>
           <Route path="/Location" element={<Location/>}/>
-          <Route path="/FoodDetais" element={<FoodDetails/>}/>
+          <Route path="/RecipieDetails" element={<RecipieDetails/>}/>
+          {/* test */}
+          
         </Routes>
       </Router>
     </>

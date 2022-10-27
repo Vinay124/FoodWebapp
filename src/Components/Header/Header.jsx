@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div>
       <nav className='max-w-lg fixed h-auto w-full bottom-0 p-5 flex overflow-y-hidden overflow-x-auto justify-between rounded-t-lg bg-white shadow-lg'>
-        <Link className='nav_link' to="/Notification">
+        <Link className='nav_link' to="/Home">
           <RiCompassFill fontSize="1.7em" className='text-slate-300 hover:text-orange-400'/>
         </Link>
         <Link className='nav_link' to="/Location">

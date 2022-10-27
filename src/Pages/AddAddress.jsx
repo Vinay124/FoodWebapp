@@ -1,6 +1,6 @@
 import React from "react";
 import { FiChevronLeft } from "react-icons/fi";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header/Header";
 
 const AddAddress = () => {
